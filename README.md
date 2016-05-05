@@ -31,7 +31,7 @@ Use the detailed instructions in the Photogram Golden Seven repository as a guid
 ## Setup
 
  - Clone and branch as usual.
- - Create the three models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](https://gist.github.com/rbetina/bb6336ead63080be2ff4). For example,
+ - Create the three models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](https://gist.github.com/raghubetina/bb6336ead63080be2ff4). For example,
 
         rails g model director name:string bio:text dob:string image_url:string
 
