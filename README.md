@@ -31,7 +31,7 @@ Use the detailed instructions in the README of the `photogram_golden_seven` repo
 ## Setup
 
  - First **fork**, and *then* clone.
- - Create **all three** models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](guides.firstdraft.com/crud-with-ruby.html). For example,
+ - Create **all three** models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](https://guides.firstdraft.com/crud-with-ruby.html). For example,
 
         rails g model director name:string bio:text dob:string image_url:string
         rails g model actor name:string bio:text dob:string image_url:string
