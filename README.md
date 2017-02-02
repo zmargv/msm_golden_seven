@@ -31,11 +31,14 @@ Use the detailed instructions in the README of the `photogram_golden_seven` repo
 ## Setup
 
  - First **fork**, and *then* clone.
- - Create the three models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](guides.firstdraft.com/crud-with-ruby.html). For example,
+ - Create **all three** models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](guides.firstdraft.com/crud-with-ruby.html). For example,
 
         rails g model director name:string bio:text dob:string image_url:string
+        rails g model actor name:string bio:text dob:string image_url:string
+        rails g model movie title:string year:integer duration:integer description:text image_url:string
 
- - Add a few rows to each table through Rails Console. Or, alternatively, you can run `rake db:seed` from the command line, which will pre-populate ten rows in each table (I wrote a script to save you some typing). (You need to create all three tables with exactly the column names above in order for this to work.)
+ - `rails db:migrate`
+ - Add a few rows to each table through Rails Console. Or, alternatively, you can run `rails db:seed` from the command line, which will pre-populate ten rows in each table (I wrote a script to save you some typing). **(You need to create all three tables with exactly the column names above in order for this to work.)**
 
 ### READ
 
