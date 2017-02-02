@@ -24,14 +24,14 @@ In this application, users will need to Create, Read, Update, and Delete the fol
  - description (text)
  - image_url (string)
 
-You will ultimately build something similar to [this movie database](https://resource-practice.herokuapp.com/), but **without any styling, and with only three tables**.
+You will ultimately build something similar to [Photogram Golden Seven](http://photogram-golden-7.herokuapp.com/), but with different tables/columns.
 
-Use the detailed instructions in the Photogram Golden Seven repository as a guide.
+Use the detailed instructions in the README of the `photogram_golden_seven` repository as a guide.
 
 ## Setup
 
  - First **fork**, and *then* clone.
- - Create the three models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](https://gist.github.com/raghubetina/bb6336ead63080be2ff4). For example,
+ - Create the three models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](guides.firstdraft.com/crud-with-ruby.html). For example,
 
         rails g model director name:string bio:text dob:string image_url:string
 
@@ -59,4 +59,4 @@ Use the detailed instructions in the Photogram Golden Seven repository as a guid
 
 ---
 
-Rinse and repeat for the other two tables. Good luck, ask lots of questions!
+Rinse and repeat for the other two tables, actors and movies. Good luck, ask lots of questions!
