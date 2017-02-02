@@ -59,6 +59,7 @@ Use the detailed instructions in the README of the `photogram_golden_seven` repo
 
  - Build a way to see a pre-populated form to edit an existing row, e.g., by visiting [http://localhost:3000/directors/4/edit_form](http://localhost:3000/directors/4/edit_form)
  - Build the complementary action to receive inputs from that form and actually update the existing row with them.
+ - **Note:** If you run into an error that talks about "URI too long", that's because the bio is too long to fit in the query string. This is not an error for you to worry about; we'll talk about how to fix it next time. For now, just shorten the bio and re-submit the form.
 
 ---
 
