@@ -24,7 +24,7 @@ In this application, users will need to Create, Read, Update, and Delete the fol
  - description (text)
  - image_url (string)
 
-You will ultimately build something similar to [Photogram Golden Seven](http://photogram-golden-7.herokuapp.com/), but with different tables/columns.
+You will ultimately build something similar to [Photogram Golden Seven](https://photogram-golden-seven-target.herokuapp.com), but with different tables/columns.
 
 Use the detailed instructions in the README of the `photogram_golden_seven` repository as a guide.
 
