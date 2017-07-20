@@ -30,15 +30,19 @@ Use the detailed instructions in the README of the `photogram_golden_seven` repo
 
 ## Setup
 
- - First **fork**, and *then* clone.
- - Create **all three** models and databases table using `rails generate model ...` using the [Crud with Ruby Cheatsheet](https://guides.firstdraft.com/crud-with-ruby.html). For example,
+ 1. Ensure that you've forked this repo to your own GitHub account.
+ 1. Set up [a Cloud9 workspace as usual](https://guides.firstdraft.com/getting-started-with-cloud-9.html) based on this repo.
+ 1. `bin/setup`
+ 1. Run Project
+ 1. Navigate to the live app in Chrome.
+ 1. Create **all three** models and databases table using `rails generate model ...` at a Terminal prompt, using the [Crud with Ruby Cheatsheet](https://guides.firstdraft.com/crud-with-ruby.html). For example,
 
         rails g model director name:string bio:text dob:string image_url:string
         rails g model actor name:string bio:text dob:string image_url:string
         rails g model movie title:string year:integer duration:integer description:text image_url:string
 
- - `rails db:migrate`
- - Add a few rows to each table through Rails Console. Or, alternatively, you can run `rails db:seed` from the command line, which will pre-populate ten rows in each table (I wrote a script to save you some typing). **(You need to create all three tables with exactly the column names above in order for this to work.)**
+ 1. At a Terminal prompt, `rails db:migrate`
+ 1. Add a few rows to each table through Rails Console or ActiveAdmin (navigate to `/admin` in the live app and sign in with `admin@example.com / password`). Or, alternatively, you can run `rails dev:prime` from the command line, which will pre-populate ten rows in each table (I wrote a script to save you some typing). **(You need to create all three tables with exactly the column names above in order for this to work.)**
 
 ### READ
 
