@@ -184,19 +184,6 @@ feature "DIRECTORS" do
     end
   end
 
-  context "edit form" do
-    it "redirects to the details page with a notice", points: 3, hint: h("copy_must_match") do
-      visit "/directors"
-
-      expect(page).to_not have_content("Director created successfully.")
-
-      click_on "Add a new director"
-      click_on "Create director"
-
-      expect(page).to have_content("Director created successfully.")
-    end
-  end
-
   context "details page" do
     it "has a 'Delete director' link", points: 2 do
       director_to_delete = create(:director)
@@ -229,21 +216,6 @@ feature "DIRECTORS" do
       click_on "Delete director"
 
       expect(page).to have_current_path("/directors")
-    end
-  end
-
-  context "delete link" do
-    it "redirects to the index with a notice", points: 3, hint: h("copy_must_match") do
-      director_to_delete = create(:director)
-
-      visit "/directors"
-      find("a[href*='#{director_to_delete.id}']", text: "Show details").click
-
-      expect(page).to_not have_content("Director deleted successfully.")
-
-      click_on "Delete director"
-
-      expect(page).to have_content("Director deleted successfully.")
     end
   end
 
@@ -394,22 +366,6 @@ feature "DIRECTORS" do
       click_on "Update director"
 
       expect(page).to have_current_path(details_page_path, only_path: true)
-    end
-  end
-
-  context "edit form" do
-    it "redirects to the details page with a notice", points: 3, hint: h("copy_must_match") do
-      director_to_edit = create(:director)
-
-      visit "/directors"
-      find("a[href*='#{director_to_edit.id}']", text: "Show details").click
-
-      expect(page).to_not have_content("Director updated successfully.")
-
-      click_on "Edit director"
-      click_on "Update director"
-
-      expect(page).to have_content("Director updated successfully.")
     end
   end
 end
