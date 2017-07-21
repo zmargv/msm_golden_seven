@@ -16,6 +16,7 @@ module MustSeeMoviesGoldenSeven
       g.test_framework nil
       g.factory_girl false
       g.scaffold_stylesheet false
+      g.orm :draft
     end
   end
 end

@@ -16,6 +16,12 @@ GIT
       sprockets (< 4.1)
 
 GIT
+  remote: https://github.com/firstdraft/firstdraft_generators.git
+  revision: be2716d7841ff97a62c4a123880cdcd0cea7d29d
+  specs:
+    firstdraft_generators (0.0.3)
+
+GIT
   remote: https://github.com/firstdraft/grade_runner.git
   revision: b0dca22bd3f532fd6e1e94dabe6b8a7024e0a238
   specs:
@@ -135,7 +141,6 @@ GEM
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
     ffi (1.9.18)
-    firstdraft_generators (0.0.3)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
     formtastic (3.1.5)
@@ -326,7 +331,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   factory_girl_rails
-  firstdraft_generators
+  firstdraft_generators!
   font-awesome-sass (~> 4.7.0)
   grade_runner!
   jbuilder (~> 2.5)
