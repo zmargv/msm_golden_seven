@@ -1,0 +1,19 @@
+<h1>All Actors</h1>
+
+<a href="/actors/new">Add a new actor</a>
+
+<% @list_actors.each do |curr| %>
+<div class="thumbnail col-md-6">
+    <div class="caption col-md-6">
+        <ul>
+            <li><%= curr.name%></li>
+            <li><%= curr.bio%></li>
+            <li><%= curr.dob%></li>
+            <li><%= curr.image_url%></li>
+        </ul>
+        <a href="/actors/<%= curr.id %>" class="btn btn-default btn-block">Show details</a>
+        <a href="/actors/<%= curr.id %>/edit" class="btn btn-default btn-block">Edit</a>
+        <a href="/delete_actor/<%= curr.id %>" class="btn btn-default btn-block">Delete actor</a>
+    </div>
+</div>
+<% end %>

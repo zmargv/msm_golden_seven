@@ -1,0 +1,14 @@
+<h1>Movie Details</h1>
+<ul>
+    <li><%= @elem.title%></li>
+    <li><%= @elem.year%></li>
+    <li><%= @elem.duration%></li>
+    <li><%= @elem.description%></li>
+    <li><%= @elem.image_url%></li>
+    <li>
+        <a href="/delete_movie/<%= @elem.id %>" class="btn btn-default btn-block">Delete movie</a>
+    </li>
+    <li>
+        <a href="/movies/<%= @elem.id %>/edit" class="btn btn-default btn-block">Edit movie</a>
+    </li>
+</ul>

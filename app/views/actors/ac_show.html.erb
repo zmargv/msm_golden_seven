@@ -1,0 +1,13 @@
+<h1>Actor Details</h1>
+<ul>
+    <li><%= @elem.name%></li>
+    <li><%= @elem.bio%></li>
+    <li><%= @elem.dob%></li>
+    <li><%= @elem.image_url%></li>
+    <li>
+        <a href="/delete_actor/<%= @elem.id %>" class="btn btn-default btn-block">Delete actor</a>
+    </li>
+    <li>
+        <a href="/actors/<%= @elem.id %>/edit" class="btn btn-default btn-block">Edit actor</a>
+    </li>
+</ul>
